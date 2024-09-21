@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <div class="head">
+        <h1 id="logo">Logo</h1>
+        <div class="nav" id="menuOpen">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+          <p id="closePar" onclick="menuClose()">x</p>
+        </div>
+        <div class="buttons" id="btns">
+          <button class="in">Sign In</button>
+          <button class="up">Sign Up</button>
+        </div>
+        <img src="img/hmenu-removebg-preview.png" height="30px" width="30px" onclick="menuOpen()"id="image">
+      </div>
+      <div class="body">
+        <div class="body-items">
+          <div class="form">
+            <p>Welcome to myCompany</p>
+            <h2>Sign Up</h2>
+          </div>
+          <div class="form">
+            <div class="name">
+              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="Second Name">
+            </div>
+          </div>
+          <div class="form">
+            <input type="email" placeholder="Email" class="long-input">
+          </div>
+          <div class="form">
+            <input type="password" placeholder="Password" class="long-input">
+          </div>
+          <div class="form">
+            <button class="long-button">Register</button>
+          </div>
+          <div class="form" id="form">
+            <div class="check">
+              <input type="checkbox"><p>Remember Me</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function menuOpen(){
+      if(document.getElementById("menuOpen").style.marginRight = '-800px'){
+      document.getElementById("menuOpen").style.marginRight = '-600px';
+      document.getElementById("menuOpen").style.opacity = "100px";
+      document.getElementById("menuOpen").style.opacity = "100"
+      document.getElementById("menuOpen").style.marginTop = '120px';
+      document.getElementById("image").style.marginRight = '-150px';
+      document.getElementById("btns").style.marginRight = '-370px';
+      document.getElementById("logo").style.marginRight = '-250px';
+      document.getElementById("image").style.marginTop = '-120px';
+      document.getElementById("btns").style.marginTop = '-120px';
+      document.getElementById("logo").style.marginTop = '-120px';
+      document.getElementById("demo").style.display = 'block';
+      }
+      }
+      function menuClose(){
+        document.getElementById("menuOpen").style.opacity = "0"
+      }
+  </script>
+</body>
+</html>
